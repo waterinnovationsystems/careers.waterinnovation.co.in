@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Water Innovation Systems - Careers</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins, sans-serif;
+}
+
+body{
+    background:#3145f0;
+    color:white;
+}
+
+/* GLOBAL CONTAINER */
+.container{
+    width:100%;
+    max-width:1100px;
+    margin:auto;
+    padding:0 15px;
+}
+
+/* HEADER */
+.header{
+    position:relative;
+    padding:12px 0;
+}
+
+.header-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    height:40px;
+}
+
+/* HERO */
+.hero{
+    background:url('homepagebanner.webp') no-repeat center/cover;
+    border-radius:12px;
+    margin:10px 0;
+    padding:40px 15px;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(15,23,42,0.75);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:22px;
+}
+
+.hero p{
+    font-size:13px;
+    margin-top:8px;
+}
+
+/* CARD */
+.card{
+    background:rgba(30,41,59,0.95);
+    border-radius:12px;
+    padding:15px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* SECTIONS */
+.left, .right{
+    width:100%;
+}
+
+/* LEFT CONTENT */
+.left h2{
+    font-size:18px;
+    margin-bottom:5px;
+}
+
+.left p{
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.left ul{
+    padding-left:15px;
+}
+
+/* FORM */
+.right{
+    background:white;
+    color:black;
+    border-radius:10px;
+    padding:15px;
+}
+
+.right h3{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top:8px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+/* BUTTON */
+.btn{
+    width:100%;
+    padding:12px;
+    margin-top:12px;
+    border:none;
+    border-radius:6px;
+    font-weight:600;
+}
+
+.apply-btn{
+    background:linear-gradient(135deg,#0077b6,#00b4d8);
+    color:white;
+}
+
+/* PORTAL BUTTON */
+.portal-btn{
+    width:100%;
+    background:#22c55e;
+    color:white;
+    padding:10px;
+    border:none;
+    border-radius:6px;
+    margin-top:10px;
+}
+
+/* FEATURES */
+.features{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    text-align:center;
+}
+
+.feature{
+    background:#020617;
+    padding:10px;
+    border-radius:8px;
+    font-size:12px;
+}
+
+/* FOOTER */
+footer{
+    margin-top:20px;
+    text-align:center;
+    padding:15px 10px;
+    background:#020617;
+    font-size:12px;
+}
+
+/* TABLET */
+@media(min-width:768px){
+
+    .hero{
+        padding:60px;
+        text-align:left;
+    }
+
+    .hero-content{
+        text-align:left;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .card{
+        flex-direction:row;
+        padding:25px;
+    }
+
+    .left{
+        flex:2;
+    }
+
+    .right{
+        flex:1;
+    }
+
+    .features{
+        grid-template-columns:repeat(4,1fr);
+    }
+}
+</style>
+
+<script>
+function openApplyLink(){
+    window.open("Apply Below", "_blank");
+}
+
+function redirectThankYou(){
+    setTimeout(function(){
+        window.location.href = "thankyou.html";
+    }, 500);
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HEADER -->
+
+<div class="header">
+    <div class="header-inner">
+        <img src="/mobile/logo_white.png" class="logo">
+        <div>Careers</div>
+    </div>
+</div>
+
+<!-- HERO -->
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>Build a Sustainable Future with Us</h1>
+        <p>Innovating water solutions for a better tomorrow.</p>
+    </div>
+</div>
+
+<!-- CARD -->
+
+<div class="card">
+
+<div class="left">
+    <h2>Sales & Marketing Executive</h2>
+    <p>Drive growth and build client relationships.</p>
+
+
+<h3>Responsibilities</h3>
+<ul>
+    <li>Generate leads</li>
+    <li>Meet targets</li>
+    <li>Client handling</li>
+    <li>Willing to Travel Field</li>
+    <li>Handle B2B Sales</li>
+    <li>Handle B2B Sales</li>
+</ul>
+
+<hr style="margin:15px 0;">
+
+<h2>Service Engineer</h2>
+<li>Installation & maintenance of pumps</li>
+<li>Perform preventive & breakdown maintenance at customer sites</li>
+<li>Diagnose and resolve mechanical, hydraulic, and electrical issues</li>
+<li>Calibration and flow adjustment of dosing pumps</li>
+<li>Provide technical support & training to clients/operators</li>
+<li>Maintain service reports, logs, and documentation</li>
+<li>Coordinate with sales team for AMC, spare parts & upgrades</li>
+<li>Ensure compliance with safety standards and procedures</li>
+<li>Handle field visits across multiple industrial sites</li>
+
+<button class="portal-btn" onclick="openApplyLink()">Enter Details & Apply Below </button>
+
+
+</div>
+
+<div class="right">
+    <h3>Quick Apply</h3>
+
+
+<form action="https://formsubmit.co/itsupport@waterinnovation.co.in"
+      method="POST"
+      enctype="multipart/form-data"
+      onsubmit="redirectThankYou()">
+
+    <input type="hidden" name="_subject" value="New Job Application">
+    <input type="hidden" name="_captcha" value="false">
+
+    <input type="text" name="Name" placeholder="Candidate Name" required>
+    <input type="email" name="Email" placeholder="Email ID" required>
+    <input type="text" name="Company" placeholder="Current Company">
+    <input type="text" name="Role" placeholder="Applying Role">
+    <input type="text" name="Experience" placeholder="Experience">
+    <input type="text" name="CTC" placeholder="Current CTC">
+    <input type="file" name="attachment" required>
+
+    <button class="btn apply-btn">Submit Application</button>
+</form>
+
+<small>No spam. 100% privacy.</small>
+
+
+</div>
+
+</div>
+
+<!-- FEATURES -->
+
+<div class="features">
+    <div class="feature">Sustainable</div>
+    <div class="feature">Technology</div>
+    <div class="feature">Culture</div>
+    <div class="feature">Growth</div>
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+    <img src="/mobile/logo_white.png" height="30">
+    <p>© 2026 Water Innovation Systems</p>
+</footer>
+
+</div>
+
+</body>
+</html>
