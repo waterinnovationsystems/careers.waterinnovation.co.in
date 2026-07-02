@@ -198,10 +198,48 @@ footer{
 }
 </style>
 
+<!-- ✅ DEVICE AUTO DETECT SCRIPT (ADDED ONLY THIS) -->
+
 <script>
-function applyZoho(){
-    window.location.href="https://waterinnovation.zohorecruit.in/jobs/Careers/235284000000376465/Sales-Marketing-Executive?source=CareerSite";
-}
+(function () {
+
+    function getDeviceType() {
+        const width = window.innerWidth;
+
+        if (width <= 480) {
+            return "mobile";
+        } else if (width > 480 && width <= 1024) {
+            return "tablet";
+        } else {
+            return "desktop";
+        }
+    }
+
+    function redirectUser() {
+        const device = getDeviceType();
+        const path = window.location.pathname;
+
+        // Prevent infinite loop
+        if (path.includes("/mobile/") || path.includes("/tablet/")) {
+            return;
+        }
+
+        if (device === "mobile") {
+            window.location.replace("/mobile/index.html");
+        } 
+        else if (device === "tablet") {
+            window.location.replace("/tablet/index.html");
+        }
+        // Desktop → no redirect
+    }
+
+    redirectUser();
+
+})();
+</script>
+
+<script>
+
 </script>
 
 </head>
