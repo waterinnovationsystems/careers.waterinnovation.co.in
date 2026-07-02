@@ -220,15 +220,15 @@ footer{
         const path = window.location.pathname;
 
         // Prevent infinite loop
-        if (path.includes("careers.waterinnovation.co.in/mobile/") || path.includes("careers.waterinnovation.co.in/tablet/")) {
+        if (path.includes("mobile/index.html") || path.includes("tablet/index.html")) {
             return;
         }
 
         if (device === "mobile") {
-            window.location.replace("careers.waterinnovation.co.in/mobile/index.html");
+            window.location.replace("mobile/index.html");
         } 
         else if (device === "tablet") {
-            window.location.replace("careers.waterinnovation.co.in/tablet/index.html");
+            window.location.replace("tablet/index.html");
         }
         // Desktop → no redirect
     }
