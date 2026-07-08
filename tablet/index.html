@@ -21,7 +21,6 @@ body{
     color:white;
 }
 
-/* GLOBAL CONTAINER */
 .container{
     width:100%;
     max-width:1100px;
@@ -29,9 +28,7 @@ body{
     padding:0 15px;
 }
 
-/* HEADER */
 .header{
-    position:relative;
     padding:12px 0;
 }
 
@@ -45,7 +42,6 @@ body{
     height:40px;
 }
 
-/* HERO */
 .hero{
     background:url('homepagebanner.webp') no-repeat center/cover;
     border-radius:12px;
@@ -68,16 +64,6 @@ body{
     text-align:center;
 }
 
-.hero h1{
-    font-size:22px;
-}
-
-.hero p{
-    font-size:13px;
-    margin-top:8px;
-}
-
-/* CARD */
 .card{
     background:rgba(30,41,59,0.95);
     border-radius:12px;
@@ -87,37 +73,15 @@ body{
     gap:20px;
 }
 
-/* SECTIONS */
 .left, .right{
     width:100%;
 }
 
-/* LEFT CONTENT */
-.left h2{
-    font-size:18px;
-    margin-bottom:5px;
-}
-
-.left p{
-    font-size:13px;
-    margin-bottom:10px;
-}
-
-.left ul{
-    padding-left:15px;
-}
-
-/* FORM */
 .right{
     background:white;
     color:black;
     border-radius:10px;
     padding:15px;
-}
-
-.right h3{
-    text-align:center;
-    margin-bottom:10px;
 }
 
 input{
@@ -128,7 +92,6 @@ input{
     border:1px solid #ccc;
 }
 
-/* BUTTON */
 .btn{
     width:100%;
     padding:12px;
@@ -143,7 +106,6 @@ input{
     color:white;
 }
 
-/* PORTAL BUTTON */
 .portal-btn{
     width:100%;
     background:#22c55e;
@@ -152,9 +114,9 @@ input{
     border:none;
     border-radius:6px;
     margin-top:10px;
+    cursor:pointer;
 }
 
-/* FEATURES */
 .features{
     margin-top:20px;
     display:grid;
@@ -170,7 +132,6 @@ input{
     font-size:12px;
 }
 
-/* FOOTER */
 footer{
     margin-top:20px;
     text-align:center;
@@ -179,50 +140,16 @@ footer{
     font-size:12px;
 }
 
-/* TABLET */
 @media(min-width:768px){
-
-    .hero{
-        padding:60px;
-        text-align:left;
-    }
-
-    .hero-content{
-        text-align:left;
-    }
-
-    .hero h1{
-        font-size:36px;
-    }
-
     .card{
         flex-direction:row;
-        padding:25px;
-    }
-
-    .left{
-        flex:2;
-    }
-
-    .right{
-        flex:1;
-    }
-
-    .features{
-        grid-template-columns:repeat(4,1fr);
     }
 }
 </style>
 
 <script>
 function openApplyLink(){
-    window.open("Apply Below", "_blank");
-}
-
-function redirectThankYou(){
-    setTimeout(function(){
-        window.location.href = "thankyou.html";
-    }, 500);
+    window.open("https://formsubmit.co/itsupport@waterinnovation.co.in", "_blank");
 }
 </script>
 
@@ -232,8 +159,6 @@ function redirectThankYou(){
 
 <div class="container">
 
-<!-- HEADER -->
-
 <div class="header">
     <div class="header-inner">
         <img src="logo_white.png" class="logo">
@@ -241,16 +166,12 @@ function redirectThankYou(){
     </div>
 </div>
 
-<!-- HERO -->
-
 <div class="hero">
     <div class="hero-content">
         <h1>Build a Sustainable Future with Us</h1>
         <p>Innovating water solutions for a better tomorrow.</p>
     </div>
 </div>
-
-<!-- CARD -->
 
 <div class="card">
 
@@ -266,58 +187,50 @@ function redirectThankYou(){
     <li>Client handling</li>
     <li>Willing to Travel Field</li>
     <li>Handle B2B Sales</li>
-    <li>Handle B2B Sales</li>
 </ul>
 
-<hr style="margin:15px 0;">
+<button class="portal-btn" onclick="openApplyLink()">
+    Apply filling Details >>>>>
+</button>
 
-<h2>Service Engineer</h2>
-<li>Installation & maintenance of pumps</li>
-<li>Perform preventive & breakdown maintenance at customer sites</li>
-<li>Diagnose and resolve mechanical, hydraulic, and electrical issues</li>
-<li>Calibration and flow adjustment of dosing pumps</li>
-<li>Provide technical support & training to clients/operators</li>
-<li>Maintain service reports, logs, and documentation</li>
-<li>Coordinate with sales team for AMC, spare parts & upgrades</li>
-<li>Ensure compliance with safety standards and procedures</li>
-<li>Handle field visits across multiple industrial sites</li>
-
- <button class="portal-btn" onclick="https://formsubmit.co/itsupport@waterinnovation.co.in">Apply filling Details >>>>> </button>
-    </div>
 
 </div>
 
 <div class="right">
     <h3>Quick Apply</h3>
 
-
 <form action="https://formsubmit.co/itsupport@waterinnovation.co.in"
       method="POST"
-      enctype="multipart/form-data"
-      onsubmit="redirectThankYou()">
+      enctype="multipart/form-data">
 
-    <input type="hidden" name="_subject" value="New Job Application">
-    <input type="hidden" name="_captcha" value="false">
 
-    <input type="text" name="Name" placeholder="Candidate Name" required>
-    <input type="email" name="Email" placeholder="Email ID" required>
-    <input type="text" name="Company" placeholder="Current Company">
-    <input type="text" name="Role" placeholder="Applying Role">
-    <input type="text" name="Experience" placeholder="Experience">
-    <input type="text" name="CTC" placeholder="Current CTC">
-    <input type="file" name="attachment" required>
+<!-- REQUIRED SETTINGS -->
+<input type="hidden" name="_subject" value="New Job Application">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="thankyou.html">
 
-    <button class="btn apply-btn">Submit Application</button>
+<!-- FORM FIELDS -->
+<input type="text" name="Name" placeholder="Candidate Name" required>
+<input type="email" name="Email" placeholder="Email ID" required>
+<input type="text" name="Company" placeholder="Current Company">
+<input type="text" name="Role" placeholder="Applying Role">
+<input type="text" name="Experience" placeholder="Experience">
+<input type="text" name="CTC" placeholder="Current CTC">
+<input type="text" name="CTC" placeholder="Expected CTC">    
+<input type="file" name="attachment" required>
+
+<button type="submit" class="btn apply-btn">
+    Submit Application
+</button>
+
+
 </form>
 
 <small>No spam. 100% privacy.</small>
 
-
 </div>
 
 </div>
-
-<!-- FEATURES -->
 
 <div class="features">
     <div class="feature">Sustainable</div>
@@ -325,8 +238,6 @@ function redirectThankYou(){
     <div class="feature">Culture</div>
     <div class="feature">Growth</div>
 </div>
-
-<!-- FOOTER -->
 
 <footer>
     <img src="logo_white.png" height="30">
