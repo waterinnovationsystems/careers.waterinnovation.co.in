@@ -17,10 +17,11 @@
 }
 
 body{
-    background:#3145f0;
+    background:linear-gradient(135deg,#1e3a8a,#3145f0);
     color:white;
 }
 
+/* CONTAINER */
 .container{
     width:100%;
     max-width:1100px;
@@ -28,8 +29,9 @@ body{
     padding:0 15px;
 }
 
+/* HEADER */
 .header{
-    padding:12px 0;
+    padding:15px 0;
 }
 
 .header-inner{
@@ -39,23 +41,30 @@ body{
 }
 
 .logo{
-    height:40px;
+    height:45px;
 }
 
+.header-inner div{
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+/* HERO */
 .hero{
     background:url('homepagebanner.webp') no-repeat center/cover;
-    border-radius:12px;
-    margin:10px 0;
-    padding:40px 15px;
+    border-radius:16px;
+    margin:15px 0;
+    padding:50px 20px;
     position:relative;
     overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
 }
 
 .hero::after{
     content:'';
     position:absolute;
     inset:0;
-    background:rgba(15,23,42,0.75);
+    background:linear-gradient(135deg,rgba(15,23,42,0.85),rgba(15,23,42,0.6));
 }
 
 .hero-content{
@@ -64,41 +73,96 @@ body{
     text-align:center;
 }
 
+.hero h1{
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:14px;
+    opacity:0.9;
+}
+
+/* CARD */
 .card{
-    background:rgba(30,41,59,0.95);
-    border-radius:12px;
-    padding:15px;
+    background:rgba(30,41,59,0.85);
+    backdrop-filter:blur(15px);
+    border-radius:16px;
+    padding:20px;
     display:flex;
     flex-direction:column;
-    gap:20px;
+    gap:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
 
-.left, .right{
-    width:100%;
+/* LEFT */
+.left h2{
+    font-size:20px;
+    margin-bottom:5px;
 }
 
+.left p{
+    font-size:14px;
+    opacity:0.9;
+}
+
+.section-title{
+    margin-top:15px;
+    margin-bottom:8px;
+    color:#38bdf8;
+    font-weight:600;
+    font-size:15px;
+}
+
+.left ul{
+    padding-left:18px;
+}
+
+.left li{
+    margin-bottom:6px;
+    font-size:13px;
+}
+
+/* RIGHT FORM */
 .right{
     background:white;
     color:black;
-    border-radius:10px;
-    padding:15px;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
+.right h3{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+/* INPUT */
 input{
     width:100%;
-    padding:10px;
-    margin-top:8px;
-    border-radius:6px;
-    border:1px solid #ccc;
+    padding:12px;
+    margin-top:10px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    font-size:13px;
 }
 
+input:focus{
+    outline:none;
+    border:1px solid #0077b6;
+}
+
+/* BUTTON */
 .btn{
     width:100%;
-    padding:12px;
-    margin-top:12px;
+    padding:13px;
+    margin-top:15px;
     border:none;
-    border-radius:6px;
+    border-radius:8px;
     font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
 }
 
 .apply-btn{
@@ -106,43 +170,74 @@ input{
     color:white;
 }
 
-.portal-btn{
-    width:100%;
-    background:#22c55e;
-    color:white;
-    padding:10px;
-    border:none;
-    border-radius:6px;
-    margin-top:10px;
-    cursor:pointer;
+.apply-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
+/* PORTAL BUTTON */
+.portal-btn{
+    width:100%;
+    background:linear-gradient(135deg,#16a34a,#22c55e);
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    margin-top:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.portal-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* FEATURES */
 .features{
-    margin-top:20px;
+    margin-top:25px;
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:10px;
-    text-align:center;
+    gap:12px;
 }
 
 .feature{
-    background:#020617;
-    padding:10px;
-    border-radius:8px;
-    font-size:12px;
-}
-
-footer{
-    margin-top:20px;
+    background:rgba(2,6,23,0.9);
+    padding:15px;
+    border-radius:12px;
+    font-size:13px;
     text-align:center;
-    padding:15px 10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.feature:hover{
+    transform:translateY(-3px);
+}
+
+/* FOOTER */
+footer{
+    margin-top:25px;
+    text-align:center;
+    padding:20px 10px;
     background:#020617;
+    border-radius:12px;
     font-size:12px;
 }
 
+footer img{
+    margin-bottom:8px;
+}
+
+/* DESKTOP */
 @media(min-width:768px){
     .card{
         flex-direction:row;
+        padding:30px;
+    }
+
+    .hero h1{
+        font-size:36px;
     }
 }
 </style>
