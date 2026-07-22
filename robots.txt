@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://waterinnovationsystems.github.io/careers.waterinnovation.co.in/sitemap.xml
