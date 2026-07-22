@@ -60,7 +60,7 @@ Interested candidates can apply through:
 ## 📍 Company Information
 
 * 📌 Location: Bangalore, Karnataka, India
-* 📞 Phone: +91 97399 50961
+* 📞 Phone: +91 87927 91988
 * 🌐 Website: https://waterinnovation.co.in
 
 
